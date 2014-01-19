@@ -57,6 +57,24 @@ namespace Multi_Kinect_Sample
                     // Start the Kinect camera.
                     kinect.Start();
                 }
+                else if (kinect.Status == KinectStatus.InsufficientBandwidth)
+                {
+                    switch (kinectCount)
+                    {
+                        case 0:
+                            this.kinectPB1.Image = Properties.Resources.noBandwidth;
+                            break;
+                        case 1:
+                            this.kinectPB2.Image = Properties.Resources.noBandwidth;
+                            break;
+                        case 2:
+                            this.kinectPB3.Image = Properties.Resources.noBandwidth;
+                            break;
+                        case 3:
+                            this.kinectPB4.Image = Properties.Resources.noBandwidth;
+                            break;
+                    }
+                }
             }
         }
 

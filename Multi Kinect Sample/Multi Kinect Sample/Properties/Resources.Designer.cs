@@ -63,6 +63,16 @@ namespace Multi_Kinect_Sample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noBandwidth {
+            get {
+                object obj = ResourceManager.GetObject("noBandwidth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap noKinect {
             get {
                 object obj = ResourceManager.GetObject("noKinect", resourceCulture);
