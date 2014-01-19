@@ -41,6 +41,7 @@
             // 
             // kinectPB1
             // 
+            this.kinectPB1.Image = global::Multi_Kinect_Sample.Properties.Resources.noKinect;
             this.kinectPB1.Location = new System.Drawing.Point(12, 12);
             this.kinectPB1.Name = "kinectPB1";
             this.kinectPB1.Size = new System.Drawing.Size(300, 200);
@@ -51,26 +52,32 @@
             // kinectPB2
             // 
             this.kinectPB2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.kinectPB2.Image = global::Multi_Kinect_Sample.Properties.Resources.noKinect;
             this.kinectPB2.Location = new System.Drawing.Point(312, 12);
             this.kinectPB2.Name = "kinectPB2";
             this.kinectPB2.Size = new System.Drawing.Size(300, 200);
+            this.kinectPB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kinectPB2.TabIndex = 1;
             this.kinectPB2.TabStop = false;
             // 
             // kinectPB4
             // 
+            this.kinectPB4.Image = global::Multi_Kinect_Sample.Properties.Resources.noKinect;
             this.kinectPB4.Location = new System.Drawing.Point(312, 229);
             this.kinectPB4.Name = "kinectPB4";
             this.kinectPB4.Size = new System.Drawing.Size(300, 200);
+            this.kinectPB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kinectPB4.TabIndex = 3;
             this.kinectPB4.TabStop = false;
             // 
             // kinectPB3
             // 
             this.kinectPB3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.kinectPB3.Image = global::Multi_Kinect_Sample.Properties.Resources.noKinect;
             this.kinectPB3.Location = new System.Drawing.Point(12, 229);
             this.kinectPB3.Name = "kinectPB3";
             this.kinectPB3.Size = new System.Drawing.Size(300, 200);
+            this.kinectPB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kinectPB3.TabIndex = 2;
             this.kinectPB3.TabStop = false;
             // 

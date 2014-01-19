@@ -42,17 +42,21 @@ namespace Multi_Kinect_Sample
             // Loop through each Kinect.
             foreach (KinectSensor kinect in KinectSensor.KinectSensors)
             {
-                // Add the Kinect's Unique ID as a key and the kinect sensor index as the count.
-                KinectIDs.Add(kinect.UniqueKinectId, kinectCount);
-                // Increment the Kinect count.
-                kinectCount += 1;
+                // Checks that the Kinect is properly Kinected (had to put one pun in).
+                if (kinect.Status == KinectStatus.Connected)
+                {
+                    // Add the Kinect's Unique ID as a key and the kinect sensor index as the count.
+                    KinectIDs.Add(kinect.UniqueKinectId, kinectCount);
+                    // Increment the Kinect count.
+                    kinectCount += 1;
 
-                // Setup the color frame event handler;
-                kinect.ColorFrameReady += new EventHandler<ColorImageFrameReadyEventArgs>(mainForm_ColorFrameReady);
-                // Enable the color stream at 640x480 resolution and 30 frames per second.
-                kinect.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
-                // Start the Kinect camera.
-                kinect.Start();
+                    // Setup the color frame event handler;
+                    kinect.ColorFrameReady += new EventHandler<ColorImageFrameReadyEventArgs>(mainForm_ColorFrameReady);
+                    // Enable the color stream at 640x480 resolution and 30 frames per second.
+                    kinect.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
+                    // Start the Kinect camera.
+                    kinect.Start();
+                }
             }
         }
 
