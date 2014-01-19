@@ -13,7 +13,6 @@ namespace Multi_Kinect_Sample
 {
     public partial class mainForm : Form
     {
-        List<KinectSensor> kinects;
         public mainForm()
         {
             InitializeComponent();
@@ -22,7 +21,6 @@ namespace Multi_Kinect_Sample
         private void mainForm_Load(object sender, EventArgs e)
         {
             int kinectCount = 0;
-            kinects = new List<KinectSensor>();
             foreach (KinectSensor kinect in KinectSensor.KinectSensors)
             {
                 switch (kinectCount)
@@ -46,8 +44,6 @@ namespace Multi_Kinect_Sample
                 kinect.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
                 // Start the Kinect camera.
                 kinect.Start();
-                kinects.Add(kinect);
-
                 kinectCount += 1;
             }
         }
